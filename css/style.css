@@ -1,0 +1,49 @@
+.body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../img/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* fuck this shit resizing but it WORKS SO DON'T YELL AT ME */
+
+@media screen and (max-width: 1300px) {
+    .body {
+        background-position: right -100px bottom 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .body {
+        background-image: url("../img/background-small.png");
+        background-position: right 0px bottom 0;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .body {
+        background-image: url("../img/background-small.png");
+        background-position: right;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .body {
+        background-image: url("../img/background-small.png");
+        background-position: right -25px bottom 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .body {
+        background-image: url("../img/background-small.png");
+        background-position: right -100px bottom 0;
+    }
+}
