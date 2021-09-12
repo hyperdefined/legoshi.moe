@@ -35,10 +35,18 @@ Why? Because why not?
         <link rel="shortcut icon" type="image/jpg" href="img/icon.png" />
     </head>
     <body class="body">
+        <audio id="song" autobuffer loop>
+        <source src="audio/song.ogg">
+        </audio>
         <script type="text/javascript">
             var _cd_options = { theme: 'dark' };
         </script>
         <script src="js/sakura.js"></script>
+        <script>
+            window.onload = function() {
+            document.getElementById("song").play();
+        }
+        </script>
         <script>
         var sakura = new Sakura('body', {
             colors: [
